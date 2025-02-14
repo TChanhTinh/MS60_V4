@@ -16,6 +16,30 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Print {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <13 14>;
+        };
+
+        F111 {
+            bindings = <&kp F1>;
+            key-positions = <0 1>;
+        };
+
+        PTT {
+            bindings = <&kp F13>;
+            key-positions = <29 30>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <53 54>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
